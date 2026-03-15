@@ -1,0 +1,15 @@
+--- a/Configure.orig	2026-03-14 21:43:19.690431415 -0500
++++ b/Configure	2026-03-14 21:44:29.727099779 -0500
+@@ -31,9 +31,9 @@
+ 
+ # paths:
+ cat >> Makefile <<EoF
+-BIN = /usr/local/bin
+-MAN = /usr/local/man/man1
+-MAN5 = /usr/local/man/man5
++BIN = \$(D)/usr/bin
++MAN = \$(D)/usr/share/man/man1
++MAN5 = \$(D)/usr/share/man/man5
+ 
+ #       set DFLAGS equal to:
+ #          -DSYSV       if using SYSTEM V
